@@ -14,7 +14,7 @@
 
             // Query to fetch User data
             $selectUserQuery = mysqli_query($con, "SELECT * FROM `users` WHERE `username` ='".$username."'") or die(mysqli_error($con));
-            $userRow = mysqli_fetch_array($selectUserQuery)            ;
+            $userRow = mysqli_fetch_array($selectUserQuery);
 
             if ($userId = $userRow['user_id']) {
                 // Query to fetch shopkeeper data
@@ -201,12 +201,12 @@
                                         <span class="badge badge-success pull-right">10</span> 
                                         Registraion
                                     </a>
-                                    <a href="coupon.html">
+                                    <a href="coupon.php">
                                         <i class="fa fa-envelope-o fa-fw pull-right"></i>
                                         <span class="badge badge-danger pull-right">5</span>
                                         Coupons
                                     </a>
-                                    <a href="discount.html">
+                                    <a href="discount.php">
                                         <i class="fa fa-magnet fa-fw pull-right"></i>
                                         <span class="badge badge-info pull-right">3</span> 
                                         Discount
@@ -319,7 +319,7 @@
                                                                                     <div class="flip_wrap_back back face">
                                                                                         <div class="flip_wrap_back_con centered-ux">
                                                                                             <h2>
-                                                                                                <a href="coupon.html">Coupon</a>
+                                                                                                <a href="coupon.php">Coupon</a>
                                                                                             </h2>
                                                                                             <ul class="hover_thumb_wrap">
                                                                                                 <li class="hover_thumb_unit"><a
@@ -352,7 +352,7 @@
                                                                                         <div class="flip_wrap_back_con centered-ux"
                                                                                            >
                                                                                             <h2>
-                                                                                                <a href="discount.html">Discount</a>
+                                                                                                <a href="discount.php">Discount</a>
                                                                                             </h2>
                                                                                             <ul class="hover_thumb_wrap">
                                                                                                 <li class="hover_thumb_unit"><a
